@@ -10,4 +10,5 @@ included with the distribution).
 """
 
 from reverence import _pyFSD
+
 FsdUnsignedIntegerKeyMap = _pyFSD.FsdUnsignedIntegerKeyMap

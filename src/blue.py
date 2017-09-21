@@ -22,42 +22,42 @@ from . import rescache
 
 from reverence.carbon.common.lib.utillib import KeyVal
 
+
 def set_user_agent(useragent):
-	rescache._useragent = useragent
+    rescache._useragent = useragent
 
 
 _serveraliases = {
-	"tranquility": "87.237.34.200",
-	"singularity": "87.237.33.2",
-	"duality"    : "87.237.38.60",
-	"serenity"   : "211.144.214.68",
+    "tranquility": "87.237.34.200",
+    "singularity": "87.237.33.2",
+    "duality": "87.237.38.60",
+    "serenity": "211.144.214.68",
 }
 
+
 def _getserver(server):
-	if server.replace(".","").isdigit():
-		serverip = server or None
-	else:
-		serverip = _serveraliases.get(server.lower(), None)
+    if server.replace(".", "").isdigit():
+        serverip = server or None
+    else:
+        serverip = _serveraliases.get(server.lower(), None)
 
-	if serverip is None:
-		raise ValueError("Invalid server name '%s'. Valid names are '%s' or an IP address." %\
-			(server, "', '".join((x.capitalize() for x in _serveraliases))))
+    if serverip is None:
+        raise ValueError("Invalid server name '%s'. Valid names are '%s' or an IP address." % \
+                         (server, "', '".join((x.capitalize() for x in _serveraliases))))
 
-	if serverip == "87.237.34.200":
-		servername = "Tranquility"
-	elif serverip == "87.237.33.2":
-		servername = "Singularity"
-	elif serverip == "211.144.214.68":
-		servername = "211.144.214.68"
-	else:
-		servername = serverip
+    if serverip == "87.237.34.200":
+        servername = "Tranquility"
+    elif serverip == "87.237.33.2":
+        servername = "Singularity"
+    elif serverip == "211.144.214.68":
+        servername = "211.144.214.68"
+    else:
+        servername = serverip
 
-	return servername, serverip
-
+    return servername, serverip
 
 
 __all__ = ["EVE", "marshal", "os", "pyos", "DBRow", "DBRowDescriptor"]
-
 
 # Little hack to have our exceptions look pretty when raised; instead of
 #   "reverence.blue.marshal.UnmarshalError: not enough kittens!"
@@ -69,207 +69,214 @@ marshal.UnmarshalError.__module__ = None
 # and because the exception class is accessible like this in EVE ...
 exceptions.UnmarshalError = exceptions.SQLError = __builtin__.UnmarshalError = marshal.UnmarshalError
 
+
 class boot:
-	role = "client"
+    role = "client"
+
 
 class pyos:
-	class synchro:
-		@staticmethod
-		def Sleep(msec):
-			_sleep(msec / 1000.0)
+    class synchro:
+        @staticmethod
+        def Sleep(msec):
+            _sleep(msec / 1000.0)
 
 
 class statistics(object):
-	# dummy for compatibility with CCP libs
+    # dummy for compatibility with CCP libs
 
-	@staticmethod
-	def EnterZone(*args):
-		pass
+    @staticmethod
+    def EnterZone(*args):
+        pass
 
-	@staticmethod
-	def LeaveZone():
-		pass
+    @staticmethod
+    def LeaveZone():
+        pass
 
 
 class _ResFile(object):
-	# read-only resource file handler.
+    # read-only resource file handler.
 
-	def __init__(self, rescache):
-		self.fh = None
-		self.rescache = rescache
+    def __init__(self, rescache):
+        self.fh = None
+        self.rescache = rescache
 
-	def Open(self, filename):
-		self.Close()
-		try:
-			if filename.startswith("res:"):
-				try:
-					self.fh = self.rescache.open(filename)
-				except IndexError, e:
-					return None
-#			elif filename.startswith("cache:"):
-#				self.fh = open(os.path.join(self.eve.paths.root, "cache", filename[7:]), "rb") 
-			else:
-				self.fh = open(filename, "rb")
-		except IOError:
-			pass
+    def Open(self, filename):
+        self.Close()
+        try:
+            if filename.startswith("res:"):
+                try:
+                    self.fh = self.rescache.open(filename)
+                except IndexError, e:
+                    return None
+                    #			elif filename.startswith("cache:"):
+                    #				self.fh = open(os.path.join(self.eve.paths.root, "cache", filename[7:]), "rb")
+            else:
+                self.fh = open(filename, "rb")
+        except IOError:
+            pass
 
-		return self.fh
+        return self.fh
 
-	def Read(self, *args):
-		return self.fh.read(*args)
+    def Read(self, *args):
+        return self.fh.read(*args)
 
-	def Close(self):
-		if self.fh:
-			self.fh.close()
-			self.fh = None
+    def Close(self):
+        if self.fh:
+            self.fh.close()
+            self.fh = None
 
-	# ---- custom additions ----
+    # ---- custom additions ----
 
-	def resolvepath(self, filename):
-		if filename.startswith("res:"):
-			return self.rescache.prime(filename)
-		else:
-			return filename
-	
-	def read(self, *args):
-		return self.fh.read(*args)
+    def resolvepath(self, filename):
+        if filename.startswith("res:"):
+            return self.rescache.prime(filename)
+        else:
+            return filename
 
-	def readline(self):
-		return self.fh.readline()
+    def read(self, *args):
+        return self.fh.read(*args)
 
-	def seek(self, *args, **kw):
-		return self.fh.seek(*args, **kw)
+    def readline(self):
+        return self.fh.readline()
+
+    def seek(self, *args, **kw):
+        return self.fh.seek(*args, **kw)
 
 
 # offline RemoteSvc wrappers
 
 class _RemoteSvcWrap(object):
-	def __init__(self, eve, name):
-		self.eve = eve
-		self.svcName = name
+    def __init__(self, eve, name):
+        self.eve = eve
+        self.svcName = name
 
-	def __getattr__(self, methodName):
-		return _RemoteSvcMethod(self.eve, self.svcName, methodName)
+    def __getattr__(self, methodName):
+        return _RemoteSvcMethod(self.eve, self.svcName, methodName)
 
 
 class _RemoteSvcMethod(object):
-	def __init__(self, eve, svcName, methodName):
-		self.eve = eve
-		self.svcName = svcName
-		self.methodName = methodName
+    def __init__(self, eve, svcName, methodName):
+        self.eve = eve
+        self.svcName = svcName
+        self.methodName = methodName
 
-	def __call__(self, *args, **kw):
-		key = (self.svcName, self.methodName) + args
-		obj = self.eve.cache.LoadCachedMethodCall(key)
-		return obj['lret']
+    def __call__(self, *args, **kw):
+        key = (self.svcName, self.methodName) + args
+        obj = self.eve.cache.LoadCachedMethodCall(key)
+        return obj['lret']
 
 
 ResFile = None
 
+
 class EVE(object):
-	"""Interface to an EVE installation's related data.
+    """Interface to an EVE installation's related data.
 
-	provides the following methods:
-	getconfigmgr() - creates interface to bulkdata. see config.ConfigMgr.
-	getcachemgr() - creates interface to cache. see cache.CacheMgr.
-	readstuff(name) - reads the specified file from EVE's resource cache.
-	RemoteSvc(service) - creates offline RemoteSvc wrapper for given service.
-	"""
+    provides the following methods:
+    getconfigmgr() - creates interface to bulkdata. see config.ConfigMgr.
+    getcachemgr() - creates interface to cache. see cache.CacheMgr.
+    readstuff(name) - reads the specified file from EVE's resource cache.
+    RemoteSvc(service) - creates offline RemoteSvc wrapper for given service.
+    """
 
-	def __init__(self, root, server="Tranquility", protocol=None, languageID="en-us", cachepath=None, sharedcachepath=None, wineprefix=None):
-		self.server = server
-		self.languageID = languageID
+    def __init__(self, root, server="Tranquility", protocol=None, languageID="en-us", cachepath=None,
+                 sharedcachepath=None, wineprefix=None):
+        self.server = server
+        self.languageID = languageID
 
-		self.server_name, self.server_ip = _getserver(server)
+        self.server_name, self.server_ip = _getserver(server)
 
-		self.paths = discover._Paths(root)
-		self.paths._set_known_paths(cache=cachepath, sharedcache=sharedcachepath, wineprefix=wineprefix)
-		self.protocol = self.paths._discover(self.server_name, self.server_ip, protocol)
+        self.paths = discover._Paths(root)
+        self.paths._set_known_paths(cache=cachepath, sharedcache=sharedcachepath, wineprefix=wineprefix)
+        self.protocol = self.paths._discover(self.server_name, self.server_ip, protocol)
 
-		# default cache
-		self.cache = cache.CacheMgr(self)
+        # default cache
+        self.cache = cache.CacheMgr(self)
 
-		# shared resource cache
-		self.rescache = rescache.ResourceCache(self.paths.root, self.paths.sharedcache)
+        # shared resource cache
+        self.rescache = rescache.ResourceCache(self.paths.root, self.paths.sharedcache)
 
-		self.cfg = self.cache.getconfigmgr(self)
-		__builtin__.cfg = self.cfg
+        self.cfg = self.cache.getconfigmgr(self)
+        __builtin__.cfg = self.cfg
 
-		# hack to make blue.ResFile() work. This obviously means that
-		# when using multiple EVE versions, only the latest will be accessible
-		# in that manner.
-		global ResFile
-		ResFile = lambda: _ResFile(self.rescache)
+        # hack to make blue.ResFile() work. This obviously means that
+        # when using multiple EVE versions, only the latest will be accessible
+        # in that manner.
+        global ResFile
+        ResFile = lambda: _ResFile(self.rescache)
 
-	def RemoteSvc(self, service):
-		"""Creates a wrapper through which offline remote service methods can be called"""
-		return _RemoteSvcWrap(self, service)
+    def RemoteSvc(self, service):
+        """Creates a wrapper through which offline remote service methods can be called"""
+        return _RemoteSvcWrap(self, service)
 
-	# --- custom additions ---
+    # --- custom additions ---
 
-	def ResFile(self):
-		return _ResFile(self.rescache)
+    def ResFile(self):
+        return _ResFile(self.rescache)
 
-	def getcachemgr(self):
-		"""Return CacheMgr instance through which this EVE's cache can be manually accessed"""
-		return self.cache
+    def getcachemgr(self):
+        """Return CacheMgr instance through which this EVE's cache can be manually accessed"""
+        return self.cache
 
-	def getconfigmgr(self):
-		"""Return ConfigMgr instance through which this EVE's bulkdata can be accessed"""
-		return self.cfg
+    def getconfigmgr(self):
+        """Return ConfigMgr instance through which this EVE's bulkdata can be accessed"""
+        return self.cfg
 
-	def readstuff(self, name):
-		"""Reads specified file in the virtual filesystem"""
-		f = _ResFile(self.rescache)
-		f.Open(name)
-		return f.read()
-
-
+    def readstuff(self, name):
+        """Reads specified file in the virtual filesystem"""
+        f = _ResFile(self.rescache)
+        f.Open(name)
+        return f.read()
 
 
 def _readstringstable():
-	from . import strings
+    from . import strings
 
-	marshal._stringtable[:] = strings.stringTable
-	#marshal._stringtable_rev.clear()
+    marshal._stringtable[:] = strings.stringTable
 
-	#c = 1
-	#for line in strings.stringsTable:
-	#	marshal._stringtable_rev[line] = c
-	#	c+=1
+
+# marshal._stringtable_rev.clear()
+
+# c = 1
+# for line in strings.stringsTable:
+#	marshal._stringtable_rev[line] = c
+#	c+=1
 
 
 
 
 def _find_global(module, name):
-	# locates a global. used by marshal.Load and integrated unpickler
+    # locates a global. used by marshal.Load and integrated unpickler
 
-	# compatibility
-	if module in ("util", "utillib") and name == "KeyVal":
-		return KeyVal
-	try:
-		m = __import__(module, globals(), locals(), (), -1)
-	except ImportError:
-		raise RuntimeError("Unable to locate object: " + module + "." + name + " (import failed)")
+    # compatibility
+    if module in ("util", "utillib") and name == "KeyVal":
+        return KeyVal
+    try:
+        m = __import__(module, globals(), locals(), (), -1)
+    except ImportError:
+        raise RuntimeError("Unable to locate object: " + module + "." + name + " (import failed)")
 
-	try:
-		return getattr(m, name)
-	except AttributeError:
-		raise RuntimeError("Unable to locate object: " + module + "." + name + " (not in module)")
+    try:
+        return getattr(m, name)
+    except AttributeError:
+        raise RuntimeError("Unable to locate object: " + module + "." + name + " (not in module)")
 
 
 def _debug(*args):
-	print >>sys.stderr, args[0].Keys(), args
+    print >> sys.stderr, args[0].Keys(), args
 
 
 # __str__ function for DBRow objects. This is done in python because it would
 # take considerably more effort to implement in C. It's not the most efficient
 # way to display DBRows, but quite useful for debugging or inspection.
 _fmt = u"%s:%s".__mod__
-def dbrow_str(row):
-	return "DBRow(" + ','.join(map(_fmt, zip(row.__keys__, row))) + ")"
-_blue.dbrow_str = dbrow_str
 
+
+def dbrow_str(row):
+    return "DBRow(" + ','.join(map(_fmt, zip(row.__keys__, row))) + ")"
+
+
+_blue.dbrow_str = dbrow_str
 
 # set the helper functions in the marshaller and init strings table
 marshal._set_find_global_func(_find_global)
@@ -283,4 +290,3 @@ sys.modules["blue"] = sys.modules["reverence.blue"]
 sys.modules["pyFSD"] = pyFSD
 
 __builtin__.boot = boot
-

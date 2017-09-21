@@ -7,7 +7,9 @@ included with the distribution).
 Parts of code inspired by or based on EVE Online, with permission from CCP.
 """
 
+
 class KeyVal:
-	__guid__ = "util.KeyVal"
-	def __repr__(self):
-		return "Anonymous KeyVal: %s" % self.__dict__
+    __guid__ = "util.KeyVal"
+
+    def __repr__(self):
+        return "Anonymous KeyVal: %s" % self.__dict__

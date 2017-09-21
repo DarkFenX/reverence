@@ -1,2 +1,2 @@
 class SolarSystemWrapper(int):
-	__guid__ = 'universe.SolarSystemWrapper'
+    __guid__ = 'universe.SolarSystemWrapper'

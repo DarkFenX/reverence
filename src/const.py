@@ -124,7 +124,6 @@ flagSubSystemSlot5 = 130
 flagSubSystemSlot6 = 131
 flagSubSystemSlot7 = 132
 
-
 categoryAbstract = 29
 categoryAccessories = 5
 categoryAncientRelic = 34
@@ -1054,77 +1053,76 @@ typeMiniContainer4 = 33161
 typeMiniContainer5 = 33162
 
 miniContainerTypes = (
-	typeMiniContainer1,
-	typeMiniContainer2,
-	typeMiniContainer3,
-	typeMiniContainer4,
-	typeMiniContainer5,
+    typeMiniContainer1,
+    typeMiniContainer2,
+    typeMiniContainer3,
+    typeMiniContainer4,
+    typeMiniContainer5,
 )
 
-
 shipPackagedVolumesPerGroup = {
- groupAssaultShip: 2500.0,
- groupAttackBattlecruiser: 15000.0,
- groupBattlecruiser: 15000.0,
- groupBattleship: 50000.0,
- groupBlackOps: 50000.0,
- groupBlockadeRunner: 20000.0,
- groupCapitalIndustrialShip: 1000000.0,
- groupCapsule: 500.0,
- groupCarrier: 1000000.0,
- groupCombatReconShip: 10000.0,
- groupCommandShip: 15000.0,
- groupCovertOps: 2500.0,
- groupCruiser: 10000.0,
- groupDestroyer: 5000.0,
- groupDreadnought: 1000000.0,
- groupElectronicAttackShips: 2500.0,
- groupEliteBattleship: 50000.0,
- groupExhumer: 3750.0,
- groupForceReconShip: 10000.0,
- groupFreighter: 1000000.0,
- groupFrigate: 2500.0,
- groupHeavyAssaultShip: 10000.0,
- groupHeavyInterdictors: 10000.0,
- groupIndustrial: 20000.0,
- groupIndustrialCommandShip: 500000.0,
- groupInterceptor: 2500.0,
- groupInterdictor: 5000.0,
- groupJumpFreighter: 1000000.0,
- groupLogistics: 10000.0,
- groupMarauders: 50000.0,
- groupMiningBarge: 3750.0,
- groupSupercarrier: 1000000.0,
- groupPrototypeExplorationShip: 500.0,
- groupRookieship: 2500.0,
- groupShuttle: 500.0,
- groupStealthBomber: 2500.0,
- groupStrategicCruiser: 5000,
- groupTitan: 10000000.0,
- groupTransportShip: 20000.0
+    groupAssaultShip: 2500.0,
+    groupAttackBattlecruiser: 15000.0,
+    groupBattlecruiser: 15000.0,
+    groupBattleship: 50000.0,
+    groupBlackOps: 50000.0,
+    groupBlockadeRunner: 20000.0,
+    groupCapitalIndustrialShip: 1000000.0,
+    groupCapsule: 500.0,
+    groupCarrier: 1000000.0,
+    groupCombatReconShip: 10000.0,
+    groupCommandShip: 15000.0,
+    groupCovertOps: 2500.0,
+    groupCruiser: 10000.0,
+    groupDestroyer: 5000.0,
+    groupDreadnought: 1000000.0,
+    groupElectronicAttackShips: 2500.0,
+    groupEliteBattleship: 50000.0,
+    groupExhumer: 3750.0,
+    groupForceReconShip: 10000.0,
+    groupFreighter: 1000000.0,
+    groupFrigate: 2500.0,
+    groupHeavyAssaultShip: 10000.0,
+    groupHeavyInterdictors: 10000.0,
+    groupIndustrial: 20000.0,
+    groupIndustrialCommandShip: 500000.0,
+    groupInterceptor: 2500.0,
+    groupInterdictor: 5000.0,
+    groupJumpFreighter: 1000000.0,
+    groupLogistics: 10000.0,
+    groupMarauders: 50000.0,
+    groupMiningBarge: 3750.0,
+    groupSupercarrier: 1000000.0,
+    groupPrototypeExplorationShip: 500.0,
+    groupRookieship: 2500.0,
+    groupShuttle: 500.0,
+    groupStealthBomber: 2500.0,
+    groupStrategicCruiser: 5000,
+    groupTitan: 10000000.0,
+    groupTransportShip: 20000.0
 }
 
 containerPackagedVolumesPerType = {
- typeGiantSecureContainer: 300,
- typeHugeSecureContainer: 150,
- typeLargeSecureContainer: 65,
- typeMediumSecureContainer: 33,
- typeSmallSecureContainer: 10,
- typeLargeAuditLogSecureContainer: 65,
- typeMediumAuditLogSecureContainer: 33,
- typeSmallAuditLogSecureContainer: 10,
- typeEnormousFreightContainer: 2500,
- typeGiantFreightContainer: 1200,
- typeHugeFreightContainer: 5000,
- typeLargeFreightContainer: 1000,
- typeMediumFreightContainer: 500,
- typeSmallFreightContainer: 100,
- typeLargeStandardContainer: 65,
- typeMediumStandardContainer: 33,
- typeSmallStandardContainer: 10,
- typeStationContainer: 10000,
- typeStationVault: 50000,
- typeStationWarehouse: 100000
+    typeGiantSecureContainer: 300,
+    typeHugeSecureContainer: 150,
+    typeLargeSecureContainer: 65,
+    typeMediumSecureContainer: 33,
+    typeSmallSecureContainer: 10,
+    typeLargeAuditLogSecureContainer: 65,
+    typeMediumAuditLogSecureContainer: 33,
+    typeSmallAuditLogSecureContainer: 10,
+    typeEnormousFreightContainer: 2500,
+    typeGiantFreightContainer: 1200,
+    typeHugeFreightContainer: 5000,
+    typeLargeFreightContainer: 1000,
+    typeMediumFreightContainer: 500,
+    typeSmallFreightContainer: 100,
+    typeLargeStandardContainer: 65,
+    typeMediumStandardContainer: 33,
+    typeSmallStandardContainer: 10,
+    typeStationContainer: 10000,
+    typeStationVault: 50000,
+    typeStationWarehouse: 100000
 }
 
 accountingKeyCash = 1000
@@ -1153,29 +1151,31 @@ accountingKeyDustISK = 10000
 accountingKeyDustAUR = 11000
 
 cashAccounts = set([
- accountingKeyCash,
- accountingKeyCash2,
- accountingKeyCash3,
- accountingKeyCash4,
- accountingKeyCash5,
- accountingKeyCash6,
- accountingKeyCash7
+    accountingKeyCash,
+    accountingKeyCash2,
+    accountingKeyCash3,
+    accountingKeyCash4,
+    accountingKeyCash5,
+    accountingKeyCash6,
+    accountingKeyCash7
 ])
 
 aurAccounts = set([
- accountingKeyAUR,
- accountingKeyAUR2,
- accountingKeyAUR3,
- accountingKeyAUR4,
- accountingKeyAUR5,
- accountingKeyAUR6,
- accountingKeyAUR7
+    accountingKeyAUR,
+    accountingKeyAUR2,
+    accountingKeyAUR3,
+    accountingKeyAUR4,
+    accountingKeyAUR5,
+    accountingKeyAUR6,
+    accountingKeyAUR7
 ])
 
 loSlotFlags = [flagLoSlot0, flagLoSlot1, flagLoSlot2, flagLoSlot3, flagLoSlot4, flagLoSlot5, flagLoSlot6, flagLoSlot7]
-medSlotFlags = [flagMedSlot0, flagMedSlot1, flagMedSlot2, flagMedSlot3, flagMedSlot4, flagMedSlot5, flagMedSlot6, flagMedSlot7]
+medSlotFlags = [flagMedSlot0, flagMedSlot1, flagMedSlot2, flagMedSlot3, flagMedSlot4, flagMedSlot5, flagMedSlot6,
+                flagMedSlot7]
 hiSlotFlags = [flagHiSlot0, flagHiSlot1, flagHiSlot2, flagHiSlot3, flagHiSlot4, flagHiSlot5, flagHiSlot6, flagHiSlot7]
-subSystemSlotFlags = [flagSubSystemSlot0, flagSubSystemSlot1, flagSubSystemSlot2, flagSubSystemSlot3, flagSubSystemSlot4]
+subSystemSlotFlags = [flagSubSystemSlot0, flagSubSystemSlot1, flagSubSystemSlot2, flagSubSystemSlot3,
+                      flagSubSystemSlot4]
 rigSlotFlags = [flagRigSlot0, flagRigSlot1, flagRigSlot2]
 
 ALSCActionAdd = 6
@@ -1216,11 +1216,10 @@ agentTypeFactionalWarfareAgent = 9
 agentTypeEpicArcAgent = 10
 agentTypeAura = 11
 auraAgentIDs = [
-	3019499, 3019493, 3019495, 3019490,
-	3019497, 3019496, 3019486, 3019498,
-	3019492, 3019500, 3019489, 3019494,
+    3019499, 3019493, 3019495, 3019490,
+    3019497, 3019496, 3019486, 3019498,
+    3019492, 3019500, 3019489, 3019494,
 ]
-
 
 agentRangeNearestEnemyCombatZone = 11
 agentRangeNeighboringConstellation = 10
@@ -1247,13 +1246,12 @@ agentLpMultiplierLevel4 = 540
 agentLpMultiplierLevel5 = 4860
 
 agentLpMultipliers = (agentLpMultiplierLevel1,
- agentLpMultiplierLevel2,
- agentLpMultiplierLevel3,
- agentLpMultiplierLevel4,
- agentLpMultiplierLevel5)
+                      agentLpMultiplierLevel2,
+                      agentLpMultiplierLevel3,
+                      agentLpMultiplierLevel4,
+                      agentLpMultiplierLevel5)
 
-
-agentIskRandomLowValue  = 11000
+agentIskRandomLowValue = 11000
 agentIskRandomHighValue = 16500
 
 agentIskCapValueLevel1 = 250000
@@ -2104,11 +2102,11 @@ effectSensorBoostTargetedHostile = 837
 effectmaxTargetRangeBonus = 2646
 
 dgmUnnerfedCategories = [
-	categorySkill,
-	categoryImplant,
-	categoryShip,
-	categoryCharge,
-	categorySubSystem
+    categorySkill,
+    categoryImplant,
+    categoryShip,
+    categoryCharge,
+    categorySubSystem
 ]
 
 bloodlineAchura = 11
@@ -2133,147 +2131,147 @@ raceGallente = 8
 raceJove = 16
 raceMinmatar = 2
 
-cacheAccRefTypes                        = 102
-cacheLogEventTypes                      = 105
-cacheMktOrderStates                     = 106
-cachePetCategories                      = 107
-cachePetQueues                          = 108
-cacheChrRaces                           = 111
-cacheChrBloodlines                      = 112
-cacheChrAncestries                      = 113
-cacheChrSchools                         = 114
-cacheChrAttributes                      = 115
-cacheChrCareers                         = 116
-cacheChrSpecialities                    = 117
-cacheCrpRegistryGroups                  = 119
-cacheCrpRegistryTypes                   = 120
-cacheDungeonTriggerTypes                = 121
-cacheDungeonEventTypes                  = 122
-cacheDungeonEventMessageTypes           = 123
-cacheStaOperations                      = 127
-cacheCrpActivities                      = 128
-cacheDungeonArchetypes                  = 129
-cacheTutCriterias                       = 133
-cacheTutTutorials                       = 134
-cacheTutContextHelp                     = 135
-cacheTutCategories                      = 136
-cacheSystemEventTypes                   = 138
-cacheUserEventTypes                     = 139
-cacheUserColumns                        = 140
-cacheSystemProcedures                   = 141
-cacheStaticSettings                     = 142
+cacheAccRefTypes = 102
+cacheLogEventTypes = 105
+cacheMktOrderStates = 106
+cachePetCategories = 107
+cachePetQueues = 108
+cacheChrRaces = 111
+cacheChrBloodlines = 112
+cacheChrAncestries = 113
+cacheChrSchools = 114
+cacheChrAttributes = 115
+cacheChrCareers = 116
+cacheChrSpecialities = 117
+cacheCrpRegistryGroups = 119
+cacheCrpRegistryTypes = 120
+cacheDungeonTriggerTypes = 121
+cacheDungeonEventTypes = 122
+cacheDungeonEventMessageTypes = 123
+cacheStaOperations = 127
+cacheCrpActivities = 128
+cacheDungeonArchetypes = 129
+cacheTutCriterias = 133
+cacheTutTutorials = 134
+cacheTutContextHelp = 135
+cacheTutCategories = 136
+cacheSystemEventTypes = 138
+cacheUserEventTypes = 139
+cacheUserColumns = 140
+cacheSystemProcedures = 141
+cacheStaticSettings = 142
 
-cacheChrFactions                        = 201
-cacheDungeonDungeons                    = 202
-cacheMapSolarSystemJumpIDs              = 203
-cacheMapSolarSystemPseudoSecurities     = 204
-cacheInvTypeMaterials                   = 205
-cacheMapCelestialDescriptions           = 206
-cacheGMQueueOrder                       = 207
-cacheStaStationUpgradeTypes             = 208
-cacheStaStationImprovementTypes         = 209
-cacheStaSIDAssemblyLineType             = 210
-cacheStaSIDAssemblyLineTypeQuantity     = 211
-cacheStaSIDAssemblyLineQuantity         = 212
-cacheStaSIDReprocessingEfficiency       = 213
-cacheStaSIDOfficeSlots                  = 214
-cacheStaSIDServiceMask                  = 215
-cacheDogmaTypeAttributes                = 216
-cacheDogmaTypeEffects                   = 217
-cacheMapRegions                         = 218
-cacheMapConstellations                  = 219
-cacheMapSolarSystems                    = 220
-cacheStaStations                        = 221
-cacheMapPlanets                         = 222
-cacheRamTypeRequirements                = 223
-cacheInvWreckUsage                      = 224
-cacheAgentEpicArcs                      = 226
-cacheReverseEngineeringTables           = 227
-cacheReverseEngineeringTableTypes       = 228
-cacheAgentEpicArcJournalData            = 229
-cacheAgentEpicMissionMessages           = 230
-cacheAgentEpicMissionsStarting          = 231
-cacheAgentEpicMissionsBranching         = 232
-cacheAgentCorporations                  = 233
-cacheAgentCorporationActivities         = 234
-cacheAgentEpicMissionsNonEnd            = 235
-cacheLocationWormholeClasses            = 236
-cacheAgentEpicArcMissions               = 237
-cacheAgentEpicArcConnections            = 238
+cacheChrFactions = 201
+cacheDungeonDungeons = 202
+cacheMapSolarSystemJumpIDs = 203
+cacheMapSolarSystemPseudoSecurities = 204
+cacheInvTypeMaterials = 205
+cacheMapCelestialDescriptions = 206
+cacheGMQueueOrder = 207
+cacheStaStationUpgradeTypes = 208
+cacheStaStationImprovementTypes = 209
+cacheStaSIDAssemblyLineType = 210
+cacheStaSIDAssemblyLineTypeQuantity = 211
+cacheStaSIDAssemblyLineQuantity = 212
+cacheStaSIDReprocessingEfficiency = 213
+cacheStaSIDOfficeSlots = 214
+cacheStaSIDServiceMask = 215
+cacheDogmaTypeAttributes = 216
+cacheDogmaTypeEffects = 217
+cacheMapRegions = 218
+cacheMapConstellations = 219
+cacheMapSolarSystems = 220
+cacheStaStations = 221
+cacheMapPlanets = 222
+cacheRamTypeRequirements = 223
+cacheInvWreckUsage = 224
+cacheAgentEpicArcs = 226
+cacheReverseEngineeringTables = 227
+cacheReverseEngineeringTableTypes = 228
+cacheAgentEpicArcJournalData = 229
+cacheAgentEpicMissionMessages = 230
+cacheAgentEpicMissionsStarting = 231
+cacheAgentEpicMissionsBranching = 232
+cacheAgentCorporations = 233
+cacheAgentCorporationActivities = 234
+cacheAgentEpicMissionsNonEnd = 235
+cacheLocationWormholeClasses = 236
+cacheAgentEpicArcMissions = 237
+cacheAgentEpicArcConnections = 238
 
-cacheCrpNpcDivisions                    = 303
-cacheMapSolarSystemLoadRatios           = 304
-cacheStaServices                        = 305
-cacheStaOperationServices               = 306
+cacheCrpNpcDivisions = 303
+cacheMapSolarSystemLoadRatios = 304
+cacheStaServices = 305
+cacheStaOperationServices = 306
 
-cacheInvCategories                      = 401
-cacheInvGroups                          = 402
-cacheInvTypes                           = 403
-cacheInvBlueprintTypes                  = 404
-cacheCrpNpcCorporations                 = 405
-cacheAgentAgents                        = 406
-cacheDogmaExpressionCategories          = 407
-cacheDogmaExpressions                   = 408
-cacheDogmaOperands                      = 409
-cacheDogmaAttributes                    = 410
-cacheDogmaEffects                       = 411
-cacheEveMessages                        = 419
-cacheEveGraphics                        = 420
-cacheMapTypeBalls                       = 421
-cacheNpcTypeLoots                       = 423
-cacheNpcLootTableFrequencies            = 424
-cacheNpcSupplyDemand                    = 425
-cacheNpcTypeGroupingClasses             = 427
-cacheNpcTypeGroupings                   = 428
-cacheNpcTypeGroupingTypes               = 429
-cacheNpcTypeGroupingClassSettings       = 430
-cacheCrpNpcMembers                      = 431
-cacheCrpCorporations                    = 432
-cacheAgtContentTemplates                = 433
-cacheAgtContentFlowControl              = 434
-cacheAgentMissionsKill                  = 435
-cacheAgtContentCourierMissions          = 436
-cacheAgtContentExchangeOffers           = 437
-cacheCrpPlayerCorporationIDs            = 438
-cacheEosNpcToNpcStandings               = 439
-cacheRamActivities                      = 440
-cacheRamAssemblyLineTypes               = 441
-cacheRamAssemblyLineTypesCategory       = 442
-cacheRamAssemblyLineTypesGroup          = 443
-cacheRamInstallationTypes               = 444
-cacheRamSkillInfo                       = 445
-cacheMktNpcMarketData                   = 446
-cacheNpcCommands                        = 447
-cacheNpcDirectorCommands                = 448
-cacheNpcDirectorCommandParameters       = 449
-cacheNpcCommandLocations                = 450
-cacheEvePrimeOwners                     = 451
-cacheEvePrimeLocations                  = 452
-cacheInvTypeReactions                   = 453
-cacheAgtPrices                          = 454
-cacheAgtResearchStartupData             = 455
-cacheAgtOfferDetails                    = 456
-cacheAgtStorylineMissions               = 457
-cacheAgtOfferTableContents              = 458
-cacheFacWarCombatZones                  = 459
-cacheFacWarCombatZoneSystems            = 460
+cacheInvCategories = 401
+cacheInvGroups = 402
+cacheInvTypes = 403
+cacheInvBlueprintTypes = 404
+cacheCrpNpcCorporations = 405
+cacheAgentAgents = 406
+cacheDogmaExpressionCategories = 407
+cacheDogmaExpressions = 408
+cacheDogmaOperands = 409
+cacheDogmaAttributes = 410
+cacheDogmaEffects = 411
+cacheEveMessages = 419
+cacheEveGraphics = 420
+cacheMapTypeBalls = 421
+cacheNpcTypeLoots = 423
+cacheNpcLootTableFrequencies = 424
+cacheNpcSupplyDemand = 425
+cacheNpcTypeGroupingClasses = 427
+cacheNpcTypeGroupings = 428
+cacheNpcTypeGroupingTypes = 429
+cacheNpcTypeGroupingClassSettings = 430
+cacheCrpNpcMembers = 431
+cacheCrpCorporations = 432
+cacheAgtContentTemplates = 433
+cacheAgtContentFlowControl = 434
+cacheAgentMissionsKill = 435
+cacheAgtContentCourierMissions = 436
+cacheAgtContentExchangeOffers = 437
+cacheCrpPlayerCorporationIDs = 438
+cacheEosNpcToNpcStandings = 439
+cacheRamActivities = 440
+cacheRamAssemblyLineTypes = 441
+cacheRamAssemblyLineTypesCategory = 442
+cacheRamAssemblyLineTypesGroup = 443
+cacheRamInstallationTypes = 444
+cacheRamSkillInfo = 445
+cacheMktNpcMarketData = 446
+cacheNpcCommands = 447
+cacheNpcDirectorCommands = 448
+cacheNpcDirectorCommandParameters = 449
+cacheNpcCommandLocations = 450
+cacheEvePrimeOwners = 451
+cacheEvePrimeLocations = 452
+cacheInvTypeReactions = 453
+cacheAgtPrices = 454
+cacheAgtResearchStartupData = 455
+cacheAgtOfferDetails = 456
+cacheAgtStorylineMissions = 457
+cacheAgtOfferTableContents = 458
+cacheFacWarCombatZones = 459
+cacheFacWarCombatZoneSystems = 460
 cacheAgtContentAgentInteractionMissions = 461
-cacheAgtContentTalkToAgentMissions      = 462
-cacheAgtContentMissionTutorials         = 463
+cacheAgtContentTalkToAgentMissions = 462
+cacheAgtContentMissionTutorials = 463
 
-cacheEspCharacters      = 10002
-cacheEspCorporations    = 10003
-cacheEspAlliances       = 10004
-cacheEspSolarSystems    = 10005
+cacheEspCharacters = 10002
+cacheEspCorporations = 10003
+cacheEspAlliances = 10004
+cacheEspSolarSystems = 10005
 cacheSolarSystemObjects = 10006
-cacheCargoContainers    = 10007
-cachePriceHistory       = 10008
-cacheTutorialVersions   = 10009
+cacheCargoContainers = 10007
+cachePriceHistory = 10008
+cacheTutorialVersions = 10009
 cacheSolarSystemOffices = 10010
 
 tableTutorialTutorials = 200001
-tableDungeonDungeons   = 300005
-tableAgentMissions     = 3000002
+tableDungeonDungeons = 300005
+tableAgentMissions = 3000002
 
 corpLogoChangeCost = 100
 corpRoleAccountCanQuery1 = 17179869184
@@ -2742,33 +2740,33 @@ refCorporationTaxAgentRewards = 93
 refCorporationTaxAgentBonusRewards = 94
 refCorporationTaxRewards = 103
 
-stationServiceBountyMissions        =         1
-stationServiceAssassinationMissions =         2
-stationServiceCourierMission        =         4
-stationServiceInterbus              =         8
-stationServiceReprocessingPlant     =        16
-stationServiceRefinery              =        32
-stationServiceMarket                =        64
-stationServiceBlackMarket           =       128
-stationServiceStockExchange         =       256
-stationServiceCloning               =       512
-stationServiceSurgery               =      1024
-stationServiceDNATherapy            =      2048
-stationServiceRepairFacilities      =      4096
-stationServiceFactory               =      8192
-stationServiceLaboratory            =     16384
-stationServiceGambling              =     32768
-stationServiceFitting               =     65536
-stationServiceNews                  =    262144
-stationServiceStorage               =    524288
-stationServiceInsurance             =   1048576
-stationServiceDocking               =   2097152
-stationServiceOfficeRental          =   4194304
-stationServiceJumpCloneFacility     =   8388608
-stationServiceLoyaltyPointStore     =  16777216
-stationServiceNavyOffices           =  33554432
-stationServiceStorefronts           =  67108864
-stationServiceCombatSimulator       = 134217728
+stationServiceBountyMissions = 1
+stationServiceAssassinationMissions = 2
+stationServiceCourierMission = 4
+stationServiceInterbus = 8
+stationServiceReprocessingPlant = 16
+stationServiceRefinery = 32
+stationServiceMarket = 64
+stationServiceBlackMarket = 128
+stationServiceStockExchange = 256
+stationServiceCloning = 512
+stationServiceSurgery = 1024
+stationServiceDNATherapy = 2048
+stationServiceRepairFacilities = 4096
+stationServiceFactory = 8192
+stationServiceLaboratory = 16384
+stationServiceGambling = 32768
+stationServiceFitting = 65536
+stationServiceNews = 262144
+stationServiceStorage = 524288
+stationServiceInsurance = 1048576
+stationServiceDocking = 2097152
+stationServiceOfficeRental = 4194304
+stationServiceJumpCloneFacility = 8388608
+stationServiceLoyaltyPointStore = 16777216
+stationServiceNavyOffices = 33554432
+stationServiceStorefronts = 67108864
+stationServiceCombatSimulator = 134217728
 
 unitAbsolutePercent = 127
 unitAttributeID = 119
@@ -2776,7 +2774,7 @@ unitAttributePoints = 120
 unitGroupID = 115
 unitInverseAbsolutePercent = 108
 unitInversedModifierPercent = 111
-unitLength = 1 
+unitLength = 1
 unitMass = 2
 unitMilliseconds = 101
 unitModifierPercent = 109
@@ -3040,16 +3038,16 @@ scanProbeBaseNumberOfProbes = 4
 solarSystemPolaris = 30000380
 
 leaderboardShipTypeAll = 0
-leaderboardShipTypeTopFrigate=1
-leaderboardShipTypeTopDestroyer=2
-leaderboardShipTypeTopCruiser=3
-leaderboardShipTypeTopBattlecruiser=4
-leaderboardShipTypeTopBattleship=5
+leaderboardShipTypeTopFrigate = 1
+leaderboardShipTypeTopDestroyer = 2
+leaderboardShipTypeTopCruiser = 3
+leaderboardShipTypeTopBattlecruiser = 4
+leaderboardShipTypeTopBattleship = 5
 
-leaderboardPeopleBuddies=1
-leaderboardPeopleCorpMembers=2
-leaderboardPeopleAllianceMembers=3
-leaderboardPeoplePlayersInSim=4
+leaderboardPeopleBuddies = 1
+leaderboardPeopleCorpMembers = 2
+leaderboardPeopleAllianceMembers = 3
+leaderboardPeoplePlayersInSim = 4
 
 securityClassZeroSec = 0
 securityClassLowSec = 1
@@ -3070,8 +3068,8 @@ certificateGradeImproved = 3
 certificateGradeAdvanced = 4
 certificateGradeElite = 5
 
-medalMinNameLength        = 3
-medalMaxNameLength        = 100
+medalMinNameLength = 3
+medalMaxNameLength = 100
 medalMaxDescriptionLength = 1000
 
 respecTimeInterval = 365 * DAY
@@ -3079,12 +3077,12 @@ respecMinimumAttributeValue = 5
 respecMaximumAttributeValue = 15
 respecTotalRespecPoints = 39
 
-probeStateInactive    = 0
-probeStateIdle        = 1
-probeStateMoving      = 2
-probeStateWarping     = 3
-probeStateScanning    = 4
-probeStateReturning   = 5
+probeStateInactive = 0
+probeStateIdle = 1
+probeStateMoving = 2
+probeStateWarping = 3
+probeStateScanning = 4
+probeStateReturning = 5
 
 probeResultPerfect = 1.0
 probeResultInformative = 0.75
@@ -3092,13 +3090,13 @@ probeResultGood = 0.25
 probeResultUnusable = 0.001
 
 # scanner group types
-probeScanGroupScrap           = 1
-probeScanGroupSignatures      = 4
-probeScanGroupShips           = 8
-probeScanGroupStructures      = 16
+probeScanGroupScrap = 1
+probeScanGroupSignatures = 4
+probeScanGroupShips = 8
+probeScanGroupStructures = 16
 probeScanGroupDronesAndProbes = 32
-probeScanGroupCelestials      = 64
-probeScanGroupAnomalies       = 128
+probeScanGroupCelestials = 64
+probeScanGroupAnomalies = 128
 
 probeScanGroups = {}
 probeScanGroups[probeScanGroupScrap] = set([
@@ -3216,7 +3214,6 @@ probeScanGroups[probeScanGroupCelestials] = set([
     groupStation,
 ])
 
-
 mapWormholeRegionMin = 11000000
 mapWormholeRegionMax = 11999999
 mapWormholeConstellationMin = 21000000
@@ -3248,21 +3245,21 @@ agentMissionStateOffered = 1
 agentMissionStateAccepted = 2
 
 rookieAgentList = [
-	3018681, 3018821, 3018822, 3018823,
-	3018824, 3018680, 3018817, 3018818,
-	3018819, 3018820, 3018682, 3018809,
-	3018810, 3018811, 3018812, 3018678,
-	3018837, 3018838, 3018839, 3018840,
-	3018679, 3018841, 3018842, 3018843,
-	3018844, 3018677, 3018845, 3018846,
-	3018847, 3018848, 3018676, 3018825,
-	3018826, 3018827, 3018828, 3018675,
-	3018805, 3018806, 3018807, 3018808,
-	3018672, 3018801, 3018802, 3018803,
-	3018804, 3018684, 3018829, 3018830,
-	3018831, 3018832, 3018685, 3018813,
-	3018814, 3018815, 3018816, 3018683,
-	3018833, 3018834, 3018835, 3018836,
+    3018681, 3018821, 3018822, 3018823,
+    3018824, 3018680, 3018817, 3018818,
+    3018819, 3018820, 3018682, 3018809,
+    3018810, 3018811, 3018812, 3018678,
+    3018837, 3018838, 3018839, 3018840,
+    3018679, 3018841, 3018842, 3018843,
+    3018844, 3018677, 3018845, 3018846,
+    3018847, 3018848, 3018676, 3018825,
+    3018826, 3018827, 3018828, 3018675,
+    3018805, 3018806, 3018807, 3018808,
+    3018672, 3018801, 3018802, 3018803,
+    3018804, 3018684, 3018829, 3018830,
+    3018831, 3018832, 3018685, 3018813,
+    3018814, 3018815, 3018816, 3018683,
+    3018833, 3018834, 3018835, 3018836,
 ]
 
 petitionPropertyAgentMissionReq = 2
@@ -3300,55 +3297,52 @@ dungeonCompletionDestroyGuards = 1
 dungeonCompletionDestroyLCSandGuards = 2
 
 turretModuleGroups = [
- groupEnergyWeapon,
- groupGasCloudHarvester,
- groupHybridWeapon,
- groupMiningLaser,
- groupProjectileWeapon,
- groupStripMiner,
- groupFrequencyMiningLaser,
- groupTractorBeam,
- groupSalvager
+    groupEnergyWeapon,
+    groupGasCloudHarvester,
+    groupHybridWeapon,
+    groupMiningLaser,
+    groupProjectileWeapon,
+    groupStripMiner,
+    groupFrequencyMiningLaser,
+    groupTractorBeam,
+    groupSalvager
 ]
 
 previewCategories = [
- categoryDrone,
- categoryShip,
- categoryStructure,
- categoryStation,
- categorySovereigntyStructure,
- categoryApparel
+    categoryDrone,
+    categoryShip,
+    categoryStructure,
+    categoryStation,
+    categorySovereigntyStructure,
+    categoryApparel
 ]
 
 previewGroups = [
- groupStargate,
- groupFreightContainer,
- groupSecureCargoContainer,
- groupCargoContainer,
- groupAuditLogSecureContainer
-] + turretModuleGroups
-
+                    groupStargate,
+                    groupFreightContainer,
+                    groupSecureCargoContainer,
+                    groupCargoContainer,
+                    groupAuditLogSecureContainer
+                ] + turretModuleGroups
 
 dgmGroupableGroupIDs = set([
- groupEnergyWeapon,
- groupProjectileWeapon,
- groupHybridWeapon,
- groupMissileLauncher,
- groupMissileLauncherAssault,
- groupMissileLauncherCitadel,
- groupMissileLauncherCruise,
- groupMissileLauncherDefender,
- groupMissileLauncherHeavy,
- groupMissileLauncherHeavyAssault,
- groupMissileLauncherRocket,
- groupMissileLauncherSiege,
- groupMissileLauncherStandard
+    groupEnergyWeapon,
+    groupProjectileWeapon,
+    groupHybridWeapon,
+    groupMissileLauncher,
+    groupMissileLauncherAssault,
+    groupMissileLauncherCitadel,
+    groupMissileLauncherCruise,
+    groupMissileLauncherDefender,
+    groupMissileLauncherHeavy,
+    groupMissileLauncherHeavyAssault,
+    groupMissileLauncherRocket,
+    groupMissileLauncherSiege,
+    groupMissileLauncherStandard
 ])
 
 singletonBlueprintOriginal = 1
 singletonBlueprintCopy = 2
-
-
 
 cacheEspCorporations = 1
 cacheEspAlliances = 2
@@ -3597,10 +3591,6 @@ cacheUsersDataset = 2000000002
 cacheCharactersDataset = 2000000003
 cacheNameNames = 2000000004
 
-
-
-
-
 cacheEspCorporations = 1
 cacheEspAlliances = 2
 cacheEspSolarSystems = 3
@@ -3610,9 +3600,7 @@ cachePriceHistory = 6
 cacheTutorialVersions = 7
 cacheSolarSystemOffices = 8
 
-
 cacheMapLocationScenes = 1400006  # deprecated, here for backwards compatibility
-
 
 DBTYPE_BOOL = 11
 DBTYPE_I2 = 2
@@ -3621,200 +3609,199 @@ DBTYPE_R8 = 5
 DBTYPE_WSTR = 130
 
 _NAMED_CELESTIALS = {
-40002444: 'Uplingur IV (Ndoria)',
-40002445: 'Uplingur IV (Ndoria) - Moon 1',
-40002446: 'Uplingur IV (Ndoria) - Moon 2',
-40002447: 'Uplingur IV (Ndoria) - Moon 3',
-40002448: 'Uplingur IV (Ndoria) - Moon 4',
-40002449: 'Uplingur IV (Ndoria) - Moon 5',
-40002450: 'Uplingur IV (Ndoria) - Moon 6',
-40002451: 'Uplingur IV (Ndoria) - Moon 7',
-40002452: 'Uplingur IV (Ndoria) - Moon 8',
-40002453: 'Uplingur IV (Ndoria) - Moon 9',
-40002454: 'Uplingur IV (Ndoria) - Moon 10',
-40002455: 'Uplingur IV (Ndoria) - Moon 11',
-40002456: 'Uplingur IV (Ndoria) - Asteroid Belt 1',
-40002457: 'Uplingur IV (Ndoria) - Moon 12',
-40002458: 'Uplingur IV (Ndoria) - Moon 13',
-40002459: 'Uplingur IV (Ndoria) - Moon 14',
-40002460: 'Uplingur IV (Ndoria) - Moon 15',
-40002461: 'Uplingur IV (Ndoria) - Moon 16',
-40002462: 'Uplingur IV (Ndoria) - Asteroid Belt 2',
-40002463: 'Uplingur IV (Ndoria) - Asteroid Belt 3',
-40002464: 'Uplingur IV (Ndoria) - Asteroid Belt 4',
-40002465: 'Uplingur IV (Ndoria) - Moon 17',
-40002466: 'Uplingur IV (Ndoria) - Moon 18',
-40002467: 'Uplingur IV (Ndoria) - Asteroid Belt 5',
-40002468: 'Uplingur IV (Ndoria) - Asteroid Belt 6',
-40002469: 'Uplingur IV (Ndoria) - Asteroid Belt 7',
-40002470: 'Uplingur IV (Ndoria) - Moon 19',
-40002471: 'Uplingur IV (Ndoria) - Asteroid Belt 8',
-40002472: 'Uplingur IV (Ndoria) - Asteroid Belt 9',
-40002473: 'Uplingur IV (Ndoria) - Moon 20',
-40002474: 'Uplingur IV (Ndoria) - Asteroid Belt 10',
-40002475: 'Uplingur IV (Ndoria) - Moon 21',
-40002476: 'Uplingur IV (Ndoria) - Moon 22',
-40009253: 'New Caldari I (Matigu)',
-40009254: 'New Caldari I (Matigu) - Moon 1',
-40009255: 'New Caldari II (Matias)',
-40009256: 'New Caldari II (Matias) - Asteroid Belt 1',
-40009257: 'New Caldari III (Orieku)',
-40009258: 'New Caldari III (Orieku) - Asteroid Belt 1',
-40009259: 'New Caldari III (Orieku) - Moon 1',
-40009260: 'New Caldari Prime',
-40009261: 'New Caldari Prime - Moon 1',
-40009262: 'New Caldari Prime - Moon 2',
-40009263: 'New Caldari Prime - Moon 3',
-40009264: 'New Caldari V (Oniteseru)',
-40009265: 'New Caldari V (Oniteseru) - Moon 1',
-40009266: 'New Caldari V (Oniteseru) - Moon 2',
-40009267: 'New Caldari V (Oniteseru) - Moon 3',
-40092199: 'Taisy VIII (Kyonoke Pit)',
-40092200: 'Taisy VIII (Kyonoke Pit) - Moon 1',
-40139384: 'Amarr I (Mikew)',
-40139385: 'Amarr II (Mikeb)',
-40139386: 'Amarr II (Mikeb) - Asteroid Belt 1',
-40139387: 'Amarr Prime',
-40139388: 'Amarr Prime - Asteroid Belt 1',
-40139389: 'Amarr IV (Tamiroth)',
-40139390: 'Amarr IV (Tamiroth) - Asteroid Belt 1',
-40139391: 'Amarr V (Sek)',
-40139392: 'Amarr V (Sek) - Asteroid Belt 1',
-40139393: 'Amarr V (Sek) - Moon 1',
-40139394: 'Amarr VI (Zorast)',
-40139395: 'Amarr VI (Zorast) - Asteroid Belt 1',
-40139396: 'Amarr VI (Zorast) - Moon 1',
-40139397: 'Amarr VI (Zorast) - Moon 2',
-40139398: 'Amarr VII (Nemantizor)',
-40139399: 'Amarr VII (Nemantizor) - Asteroid Belt 1',
-40139400: 'Amarr VII (Nemantizor) - Moon 1',
-40139401: 'Amarr VII (Nemantizor) - Moon 2',
-40139402: 'Amarr VII (Nemantizor) - Moon 3',
-40139403: 'Amarr VIII (Oris)',
-40139404: 'Amarr VIII (Oris) - Asteroid Belt 1',
-40139405: 'Amarr VIII (Oris) - Moon 1',
-40139406: 'Amarr VIII (Oris) - Moon 2',
-40139407: 'Amarr VIII (Oris) - Asteroid Belt 2',
-40139408: 'Amarr VIII (Oris) - Moon 3',
-40139409: 'Amarr VIII (Oris) - Moon 4',
-40139410: 'Amarr VIII (Oris) - Moon 5',
-40139411: 'Amarr VIII (Oris) - Moon 6',
-40139412: 'Amarr VIII (Oris) - Moon 7',
-40139413: 'Amarr VIII (Oris) - Moon 8',
-40139414: 'Amarr VIII (Oris) - Moon 9',
-40139415: 'Amarr VIII (Oris) - Moon 10',
-40139416: 'Amarr VIII (Oris) - Asteroid Belt 3',
-40139417: 'Amarr VIII (Oris) - Moon 11',
-40139418: 'Amarr VIII (Oris) - Asteroid Belt 4',
-40139419: 'Amarr VIII (Oris) - Moon 12',
-40139420: 'Amarr VIII (Oris) - Asteroid Belt 5',
-40139421: 'Amarr VIII (Oris) - Moon 13',
-40139422: 'Amarr VIII (Oris) - Asteroid Belt 6',
-40139423: 'Amarr VIII (Oris) - Asteroid Belt 7',
-40139424: 'Amarr IX (Derdainys)',
-40139425: 'Amarr IX (Derdainys) - Asteroid Belt 1',
-40139426: 'Amarr IX (Derdainys) - Asteroid Belt 2',
-40139427: 'Amarr IX (Derdainys) - Moon 1',
-40139428: 'Amarr IX (Derdainys) - Moon 2',
-40139429: 'Amarr IX (Derdainys) - Moon 3',
-40139430: 'Amarr IX (Derdainys) - Moon 4',
-40139431: 'Amarr IX (Derdainys) - Moon 5',
-40139432: 'Amarr IX (Derdainys) - Moon 6',
-40139433: 'Amarr IX (Derdainys) - Moon 7',
-40139434: 'Amarr IX (Derdainys) - Moon 8',
-40139435: 'Amarr IX (Derdainys) - Moon 9',
-40139436: 'Amarr IX (Derdainys) - Moon 10',
-40139437: 'Amarr IX (Derdainys) - Moon 11',
-40139438: 'Amarr IX (Derdainys) - Moon 12',
-40139439: 'Amarr IX (Derdainys) - Moon 13',
-40142176: 'Ardishapur Prime III (Radonis)',
-40161832: 'Pator I (Istinn)',
-40161833: 'Pator II (Belogor)',
-40161834: 'Pator III (Huggar)',
-40161835: 'Pator III (Huggar) - Moon 1',
-40161836: 'Pator III (Huggar) - Moon 2',
-40161837: 'Pator IV (Matar)',
-40161838: 'Pator IV (Matar) - Asteroid Belt 1',
-40161839: 'Pator IV (Matar) - Moon 1',
-40161840: 'Pator V (Vakir)',
-40161841: 'Pator V (Vakir) - Asteroid Belt 1',
-40161842: 'Pator V (Vakir) - Moon 1',
-40161843: 'Pator VI (Varkal)',
-40161844: 'Pator VI (Varkal) - Asteroid Belt 1',
-40161845: 'Pator VII (Kulheim)',
-40161846: 'Pator VII (Kulheim) - Asteroid Belt 1',
-40161847: 'Pator VII (Kulheim) - Moon 1',
-40161848: 'Pator VIII (Orinn)',
-40161849: 'Pator VIII (Orinn) - Moon 1',
-40161850: 'Pator IX (Syld)',
-40236011: 'Shintaht IV (Konrakas)',
-40236012: 'Shintaht IV (Konrakas) - Moon 1',
-40236013: 'Shintaht IV (Konrakas) - Moon 2',
-40314535: 'Luminaire I (Noya)',
-40314536: 'Luminaire I (Noya) - Asteroid Belt 1',
-40314537: 'Luminaire II (Corufeu)',
-40314538: 'Luminaire II (Corufeu) - Asteroid Belt 1',
-40314539: 'Luminaire II (Corufeu) - Moon 1',
-40314540: 'Luminaire III (Astrin)',
-40314541: 'Luminaire III (Astrin) - Asteroid Belt 1',
-40314542: 'Luminaire III (Astrin) - Moon 1',
-40314543: 'Luminaire IV (Malloc)',
-40314544: 'Luminaire IV (Malloc) - Asteroid Belt 1',
-40314545: 'Luminaire IV (Malloc) - Moon 1',
-40314546: 'Luminaire V (Tanet)',
-40314547: 'Luminaire V (Tanet) - Moon 1',
-40314548: 'Luminaire V (Tanet) - Moon 2',
-40314549: 'Luminaire VI (Gallente Prime)',
-40314550: 'Luminaire VI (Gallente Prime) - Moon 1',
-40314551: 'Luminaire VI (Gallente Prime) - Asteroid Belt 1',
-40314552: 'Luminaire VI (Gallente Prime) - Moon 2',
-40314553: 'Luminaire VI (Gallente Prime) - Moon 3',
-40314554: 'Luminaire VI (Gallente Prime) - Moon 4',
-40314555: 'Luminaire VI (Gallente Prime) - Moon 5',
-40314556: 'Luminaire VI (Gallente Prime) - Moon 6',
-40314557: 'Luminaire VI (Gallente Prime) - Asteroid Belt 2',
-40314558: 'Luminaire VI (Gallente Prime) - Moon 7',
-40314559: 'Luminaire VI (Gallente Prime) - Asteroid Belt 3',
-40314560: 'Luminaire VI (Gallente Prime) - Moon 8',
-40314561: 'Luminaire VI (Gallente Prime) - Moon 9',
-40314562: 'Luminaire VI (Gallente Prime) - Moon 10',
-40314563: 'Luminaire VI (Gallente Prime) - Moon 11',
-40314564: 'Luminaire VI (Gallente Prime) - Moon 12',
-40314565: 'Luminaire VI (Gallente Prime) - Moon 13',
-40314566: 'Luminaire VI (Gallente Prime) - Moon 14',
-40314567: 'Luminaire VI (Gallente Prime) - Asteroid Belt 4',
-40314568: 'Luminaire VI (Gallente Prime) - Asteroid Belt 5',
-40314569: 'Luminaire VI (Gallente Prime) - Moon 15',
-40314570: 'Luminaire VI (Gallente Prime) - Asteroid Belt 6',
-40314571: 'Luminaire VI (Gallente Prime) - Moon 16',
-40314572: 'Luminaire VI (Gallente Prime) - Moon 17',
-40314573: 'Luminaire VII (Caldari Prime)',
-40314574: 'Luminaire VII (Caldari Prime) - Moon 1',
-40314575: 'Luminaire VII (Caldari Prime) - Moon 2',
-40314576: 'Luminaire VII (Caldari Prime) - Moon 3',
-40314577: 'Luminaire VII (Caldari Prime) - Moon 4',
-40314578: 'Luminaire VII (Caldari Prime) - Asteroid Belt 1',
-40314579: 'Luminaire VII (Caldari Prime) - Moon 5',
-40314580: 'Luminaire VII (Caldari Prime) - Moon 6',
-40314581: 'Luminaire VII (Caldari Prime) - Moon 7',
-40314582: 'Luminaire VII (Caldari Prime) - Moon 8',
-40314583: 'Luminaire VII (Caldari Prime) - Moon 9',
-40314584: 'Luminaire VII (Caldari Prime) - Moon 10',
-40314585: 'Luminaire VII (Caldari Prime) - Moon 11',
-40314586: 'Luminaire VII (Caldari Prime) - Asteroid Belt 2',
-40314587: 'Luminaire VII (Caldari Prime) - Moon 12',
-40314588: 'Luminaire VII (Caldari Prime) - Moon 13',
-40314589: 'Luminaire VII (Caldari Prime) - Moon 14',
-40314590: 'Luminaire VII (Caldari Prime) - Moon 15',
-40314591: 'Luminaire VII (Caldari Prime) - Asteroid Belt 3',
-40314592: 'Luminaire VIII (Ortange)',
-40314593: 'Luminaire VIII (Ortange) - Asteroid Belt 1',
-40314594: 'Luminaire VIII (Ortange) - Asteroid Belt 2',
-40314595: 'Luminaire VIII (Ortange) - Moon 1',
-40319254: 'Kor-Azor Prime IV (Eclipticum)',
-40319255: 'Kor-Azor Prime IV (Eclipticum) - Moon Griklaeum',
-40319256: 'Kor-Azor Prime IV (Eclipticum) - Moon Black Viperia',
-40319257: 'Kor-Azor Prime IV (Eclipticum) - Moon Kileakum',
-40467692: 'Eyjafjallajokull II',
+    40002444: 'Uplingur IV (Ndoria)',
+    40002445: 'Uplingur IV (Ndoria) - Moon 1',
+    40002446: 'Uplingur IV (Ndoria) - Moon 2',
+    40002447: 'Uplingur IV (Ndoria) - Moon 3',
+    40002448: 'Uplingur IV (Ndoria) - Moon 4',
+    40002449: 'Uplingur IV (Ndoria) - Moon 5',
+    40002450: 'Uplingur IV (Ndoria) - Moon 6',
+    40002451: 'Uplingur IV (Ndoria) - Moon 7',
+    40002452: 'Uplingur IV (Ndoria) - Moon 8',
+    40002453: 'Uplingur IV (Ndoria) - Moon 9',
+    40002454: 'Uplingur IV (Ndoria) - Moon 10',
+    40002455: 'Uplingur IV (Ndoria) - Moon 11',
+    40002456: 'Uplingur IV (Ndoria) - Asteroid Belt 1',
+    40002457: 'Uplingur IV (Ndoria) - Moon 12',
+    40002458: 'Uplingur IV (Ndoria) - Moon 13',
+    40002459: 'Uplingur IV (Ndoria) - Moon 14',
+    40002460: 'Uplingur IV (Ndoria) - Moon 15',
+    40002461: 'Uplingur IV (Ndoria) - Moon 16',
+    40002462: 'Uplingur IV (Ndoria) - Asteroid Belt 2',
+    40002463: 'Uplingur IV (Ndoria) - Asteroid Belt 3',
+    40002464: 'Uplingur IV (Ndoria) - Asteroid Belt 4',
+    40002465: 'Uplingur IV (Ndoria) - Moon 17',
+    40002466: 'Uplingur IV (Ndoria) - Moon 18',
+    40002467: 'Uplingur IV (Ndoria) - Asteroid Belt 5',
+    40002468: 'Uplingur IV (Ndoria) - Asteroid Belt 6',
+    40002469: 'Uplingur IV (Ndoria) - Asteroid Belt 7',
+    40002470: 'Uplingur IV (Ndoria) - Moon 19',
+    40002471: 'Uplingur IV (Ndoria) - Asteroid Belt 8',
+    40002472: 'Uplingur IV (Ndoria) - Asteroid Belt 9',
+    40002473: 'Uplingur IV (Ndoria) - Moon 20',
+    40002474: 'Uplingur IV (Ndoria) - Asteroid Belt 10',
+    40002475: 'Uplingur IV (Ndoria) - Moon 21',
+    40002476: 'Uplingur IV (Ndoria) - Moon 22',
+    40009253: 'New Caldari I (Matigu)',
+    40009254: 'New Caldari I (Matigu) - Moon 1',
+    40009255: 'New Caldari II (Matias)',
+    40009256: 'New Caldari II (Matias) - Asteroid Belt 1',
+    40009257: 'New Caldari III (Orieku)',
+    40009258: 'New Caldari III (Orieku) - Asteroid Belt 1',
+    40009259: 'New Caldari III (Orieku) - Moon 1',
+    40009260: 'New Caldari Prime',
+    40009261: 'New Caldari Prime - Moon 1',
+    40009262: 'New Caldari Prime - Moon 2',
+    40009263: 'New Caldari Prime - Moon 3',
+    40009264: 'New Caldari V (Oniteseru)',
+    40009265: 'New Caldari V (Oniteseru) - Moon 1',
+    40009266: 'New Caldari V (Oniteseru) - Moon 2',
+    40009267: 'New Caldari V (Oniteseru) - Moon 3',
+    40092199: 'Taisy VIII (Kyonoke Pit)',
+    40092200: 'Taisy VIII (Kyonoke Pit) - Moon 1',
+    40139384: 'Amarr I (Mikew)',
+    40139385: 'Amarr II (Mikeb)',
+    40139386: 'Amarr II (Mikeb) - Asteroid Belt 1',
+    40139387: 'Amarr Prime',
+    40139388: 'Amarr Prime - Asteroid Belt 1',
+    40139389: 'Amarr IV (Tamiroth)',
+    40139390: 'Amarr IV (Tamiroth) - Asteroid Belt 1',
+    40139391: 'Amarr V (Sek)',
+    40139392: 'Amarr V (Sek) - Asteroid Belt 1',
+    40139393: 'Amarr V (Sek) - Moon 1',
+    40139394: 'Amarr VI (Zorast)',
+    40139395: 'Amarr VI (Zorast) - Asteroid Belt 1',
+    40139396: 'Amarr VI (Zorast) - Moon 1',
+    40139397: 'Amarr VI (Zorast) - Moon 2',
+    40139398: 'Amarr VII (Nemantizor)',
+    40139399: 'Amarr VII (Nemantizor) - Asteroid Belt 1',
+    40139400: 'Amarr VII (Nemantizor) - Moon 1',
+    40139401: 'Amarr VII (Nemantizor) - Moon 2',
+    40139402: 'Amarr VII (Nemantizor) - Moon 3',
+    40139403: 'Amarr VIII (Oris)',
+    40139404: 'Amarr VIII (Oris) - Asteroid Belt 1',
+    40139405: 'Amarr VIII (Oris) - Moon 1',
+    40139406: 'Amarr VIII (Oris) - Moon 2',
+    40139407: 'Amarr VIII (Oris) - Asteroid Belt 2',
+    40139408: 'Amarr VIII (Oris) - Moon 3',
+    40139409: 'Amarr VIII (Oris) - Moon 4',
+    40139410: 'Amarr VIII (Oris) - Moon 5',
+    40139411: 'Amarr VIII (Oris) - Moon 6',
+    40139412: 'Amarr VIII (Oris) - Moon 7',
+    40139413: 'Amarr VIII (Oris) - Moon 8',
+    40139414: 'Amarr VIII (Oris) - Moon 9',
+    40139415: 'Amarr VIII (Oris) - Moon 10',
+    40139416: 'Amarr VIII (Oris) - Asteroid Belt 3',
+    40139417: 'Amarr VIII (Oris) - Moon 11',
+    40139418: 'Amarr VIII (Oris) - Asteroid Belt 4',
+    40139419: 'Amarr VIII (Oris) - Moon 12',
+    40139420: 'Amarr VIII (Oris) - Asteroid Belt 5',
+    40139421: 'Amarr VIII (Oris) - Moon 13',
+    40139422: 'Amarr VIII (Oris) - Asteroid Belt 6',
+    40139423: 'Amarr VIII (Oris) - Asteroid Belt 7',
+    40139424: 'Amarr IX (Derdainys)',
+    40139425: 'Amarr IX (Derdainys) - Asteroid Belt 1',
+    40139426: 'Amarr IX (Derdainys) - Asteroid Belt 2',
+    40139427: 'Amarr IX (Derdainys) - Moon 1',
+    40139428: 'Amarr IX (Derdainys) - Moon 2',
+    40139429: 'Amarr IX (Derdainys) - Moon 3',
+    40139430: 'Amarr IX (Derdainys) - Moon 4',
+    40139431: 'Amarr IX (Derdainys) - Moon 5',
+    40139432: 'Amarr IX (Derdainys) - Moon 6',
+    40139433: 'Amarr IX (Derdainys) - Moon 7',
+    40139434: 'Amarr IX (Derdainys) - Moon 8',
+    40139435: 'Amarr IX (Derdainys) - Moon 9',
+    40139436: 'Amarr IX (Derdainys) - Moon 10',
+    40139437: 'Amarr IX (Derdainys) - Moon 11',
+    40139438: 'Amarr IX (Derdainys) - Moon 12',
+    40139439: 'Amarr IX (Derdainys) - Moon 13',
+    40142176: 'Ardishapur Prime III (Radonis)',
+    40161832: 'Pator I (Istinn)',
+    40161833: 'Pator II (Belogor)',
+    40161834: 'Pator III (Huggar)',
+    40161835: 'Pator III (Huggar) - Moon 1',
+    40161836: 'Pator III (Huggar) - Moon 2',
+    40161837: 'Pator IV (Matar)',
+    40161838: 'Pator IV (Matar) - Asteroid Belt 1',
+    40161839: 'Pator IV (Matar) - Moon 1',
+    40161840: 'Pator V (Vakir)',
+    40161841: 'Pator V (Vakir) - Asteroid Belt 1',
+    40161842: 'Pator V (Vakir) - Moon 1',
+    40161843: 'Pator VI (Varkal)',
+    40161844: 'Pator VI (Varkal) - Asteroid Belt 1',
+    40161845: 'Pator VII (Kulheim)',
+    40161846: 'Pator VII (Kulheim) - Asteroid Belt 1',
+    40161847: 'Pator VII (Kulheim) - Moon 1',
+    40161848: 'Pator VIII (Orinn)',
+    40161849: 'Pator VIII (Orinn) - Moon 1',
+    40161850: 'Pator IX (Syld)',
+    40236011: 'Shintaht IV (Konrakas)',
+    40236012: 'Shintaht IV (Konrakas) - Moon 1',
+    40236013: 'Shintaht IV (Konrakas) - Moon 2',
+    40314535: 'Luminaire I (Noya)',
+    40314536: 'Luminaire I (Noya) - Asteroid Belt 1',
+    40314537: 'Luminaire II (Corufeu)',
+    40314538: 'Luminaire II (Corufeu) - Asteroid Belt 1',
+    40314539: 'Luminaire II (Corufeu) - Moon 1',
+    40314540: 'Luminaire III (Astrin)',
+    40314541: 'Luminaire III (Astrin) - Asteroid Belt 1',
+    40314542: 'Luminaire III (Astrin) - Moon 1',
+    40314543: 'Luminaire IV (Malloc)',
+    40314544: 'Luminaire IV (Malloc) - Asteroid Belt 1',
+    40314545: 'Luminaire IV (Malloc) - Moon 1',
+    40314546: 'Luminaire V (Tanet)',
+    40314547: 'Luminaire V (Tanet) - Moon 1',
+    40314548: 'Luminaire V (Tanet) - Moon 2',
+    40314549: 'Luminaire VI (Gallente Prime)',
+    40314550: 'Luminaire VI (Gallente Prime) - Moon 1',
+    40314551: 'Luminaire VI (Gallente Prime) - Asteroid Belt 1',
+    40314552: 'Luminaire VI (Gallente Prime) - Moon 2',
+    40314553: 'Luminaire VI (Gallente Prime) - Moon 3',
+    40314554: 'Luminaire VI (Gallente Prime) - Moon 4',
+    40314555: 'Luminaire VI (Gallente Prime) - Moon 5',
+    40314556: 'Luminaire VI (Gallente Prime) - Moon 6',
+    40314557: 'Luminaire VI (Gallente Prime) - Asteroid Belt 2',
+    40314558: 'Luminaire VI (Gallente Prime) - Moon 7',
+    40314559: 'Luminaire VI (Gallente Prime) - Asteroid Belt 3',
+    40314560: 'Luminaire VI (Gallente Prime) - Moon 8',
+    40314561: 'Luminaire VI (Gallente Prime) - Moon 9',
+    40314562: 'Luminaire VI (Gallente Prime) - Moon 10',
+    40314563: 'Luminaire VI (Gallente Prime) - Moon 11',
+    40314564: 'Luminaire VI (Gallente Prime) - Moon 12',
+    40314565: 'Luminaire VI (Gallente Prime) - Moon 13',
+    40314566: 'Luminaire VI (Gallente Prime) - Moon 14',
+    40314567: 'Luminaire VI (Gallente Prime) - Asteroid Belt 4',
+    40314568: 'Luminaire VI (Gallente Prime) - Asteroid Belt 5',
+    40314569: 'Luminaire VI (Gallente Prime) - Moon 15',
+    40314570: 'Luminaire VI (Gallente Prime) - Asteroid Belt 6',
+    40314571: 'Luminaire VI (Gallente Prime) - Moon 16',
+    40314572: 'Luminaire VI (Gallente Prime) - Moon 17',
+    40314573: 'Luminaire VII (Caldari Prime)',
+    40314574: 'Luminaire VII (Caldari Prime) - Moon 1',
+    40314575: 'Luminaire VII (Caldari Prime) - Moon 2',
+    40314576: 'Luminaire VII (Caldari Prime) - Moon 3',
+    40314577: 'Luminaire VII (Caldari Prime) - Moon 4',
+    40314578: 'Luminaire VII (Caldari Prime) - Asteroid Belt 1',
+    40314579: 'Luminaire VII (Caldari Prime) - Moon 5',
+    40314580: 'Luminaire VII (Caldari Prime) - Moon 6',
+    40314581: 'Luminaire VII (Caldari Prime) - Moon 7',
+    40314582: 'Luminaire VII (Caldari Prime) - Moon 8',
+    40314583: 'Luminaire VII (Caldari Prime) - Moon 9',
+    40314584: 'Luminaire VII (Caldari Prime) - Moon 10',
+    40314585: 'Luminaire VII (Caldari Prime) - Moon 11',
+    40314586: 'Luminaire VII (Caldari Prime) - Asteroid Belt 2',
+    40314587: 'Luminaire VII (Caldari Prime) - Moon 12',
+    40314588: 'Luminaire VII (Caldari Prime) - Moon 13',
+    40314589: 'Luminaire VII (Caldari Prime) - Moon 14',
+    40314590: 'Luminaire VII (Caldari Prime) - Moon 15',
+    40314591: 'Luminaire VII (Caldari Prime) - Asteroid Belt 3',
+    40314592: 'Luminaire VIII (Ortange)',
+    40314593: 'Luminaire VIII (Ortange) - Asteroid Belt 1',
+    40314594: 'Luminaire VIII (Ortange) - Asteroid Belt 2',
+    40314595: 'Luminaire VIII (Ortange) - Moon 1',
+    40319254: 'Kor-Azor Prime IV (Eclipticum)',
+    40319255: 'Kor-Azor Prime IV (Eclipticum) - Moon Griklaeum',
+    40319256: 'Kor-Azor Prime IV (Eclipticum) - Moon Black Viperia',
+    40319257: 'Kor-Azor Prime IV (Eclipticum) - Moon Kileakum',
+    40467692: 'Eyjafjallajokull II',
 }
-
